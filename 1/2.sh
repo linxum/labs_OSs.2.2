@@ -1,13 +1,12 @@
 #!/bin/bash
 
-sudo cp a /usr/bin
-sudo chmod g+x /usr/bin/a
+cp a /usr/bin
+chmod g+x /usr/bin/a
 
-sudo cp b.lib /usr/lib
+cp b.lib /usr/lib
 
-sudo mkdir /share/smekhnev
-sudo cp c.res /share/smekhnev
-sudo tee -a /share/smekhnev/c.res <<< "/usr/bin/a"
-sudo tee -a /share/smekhnev/c.res <<< "/usr/lib/b.lib"
-
+mkdir /share/smekhnev
+cp c.res /share/smekhnev
+echo "/usr/bin/a" > /share/smekhnev/c.res
+echo "/usr/lib/b.lib" > /share/smekhnev/c.res
 exit 0
