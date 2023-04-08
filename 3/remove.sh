@@ -20,5 +20,6 @@ name=($(basename -a $sort_file))
 for index in ${!name[*]}
 do
 find "$library/sort" -type l -iname "${name[$index]##*.}" -exec rm -f {} \+
-find "$library/sort" -type d -empty -delete
 done
+
+find "$library/sort" -type d -empty -delete
