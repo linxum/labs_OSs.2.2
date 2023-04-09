@@ -12,9 +12,13 @@ rm -rf $path
 
 #Удаление в singer
 sort_file=$(find "$library/sort/singer/$del_singer" -type l)
+#echo $sort_file
 rm -rf $library/sort/singer/$del_singer
 name=($(basename -a $sort_file))
+#for index in ${!name[*]}
+#do
 #echo $name
+#done
 
 #Удаление во всём sort
 for index in ${!name[*]}
