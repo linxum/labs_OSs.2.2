@@ -10,5 +10,5 @@ clean:
 	rm -rf *.o main
 	
 install: main
-	mkdir -p "/home/smhnv/bin"
-	cp -a "./main" "/home/smhnv/bin"
+	mkdir -p "~/bin"
+	cp -a "./main" "~/bin"
