@@ -1,3 +1,5 @@
+BIN=/home/smhnv/bin
+
 all: lab4
 
 lab4: main.o dectooct.o counter.o
@@ -16,5 +18,5 @@ clean:
 	rm -rf *.o lab4
 	
 install: lab4
-	mkdir -p "/home/smhnv/bin"
-	cp -a "./lab4" "/home/smhnv/bin"
+	mkdir -p "$(BIN)"
+	cp -a "./lab4" "$(BIN)"
